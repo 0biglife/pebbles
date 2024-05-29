@@ -1,6 +1,6 @@
 {
-  "name": "pebbles",
-  "version": "0.0.1",
+  "name": "pebble-ui",
+  "version": "0.0.2",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,19 +13,18 @@
     "@types/node": "^16.18.97",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
+    "react-i18next": "^14.1.1",
+    "react-lottie": "^1.2.4",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^3.0.1",
     "typescript": "^4.9.5",
+    "vite-tsconfig-paths": "^4.3.2",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prepare": "rm -rf dist && mkdir dist && tsc"
-  },
+  "scripts": {},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -44,12 +43,23 @@
       "last 1 safari version"
     ]
   },
-  "description": "Pebble Component for your Big Wave Projects!",
-  "keywords": ["react", "component", "reusable", "animation"],
+  "description": "🌊🌊🌊",
+  "keywords": [
+    "react",
+    "component",
+    "reusable",
+    "animation"
+  ],
   "author": "0biglife",
-  "repository" : {
-	"type": "git",
-    "url" : "git://gitbub.com/0biglife/pebbles.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0biglife/pebbles"
   },
-  "contributors" : ["0biglife"]
+  "contributors": [
+    "0biglife"
+  ],
+  "devDependencies": {
+    "@types/react-lottie": "^1.2.10",
+    "vite": "^5.2.11"
+  }
 }

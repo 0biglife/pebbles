@@ -1,0 +1,64 @@
+.component-context-menu {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  user-select: none;
+}
+
+.component-context-menu-item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 36px;
+  box-sizing: border-box;
+}
+
+.component-context-menu-item:hover {
+  /* background-color: var(--etc-ui-action-hoverfff5); */
+}
+
+.component-context-menu-item-decoration {
+  margin-right: 8px;
+}
+.component-context-menu-item-button-decoration {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+}
+.component-context-menu-item-button-decoration:hover {
+  /* background: rgba(255, 255, 255, 0.05); */
+  /* border-radius: 50px; */
+}
+
+.component-context-menu-item-triangle {
+  position: absolute;
+  right: 4px;
+}
+
+.component-context-menu-list {
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border: 1px solid var(--border-ui-border);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.component-context-menu-list-item {
+  width: 100%;
+  min-height: 36px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+}
+
+.component-context-menu-list-item:hover {
+  background-color: var(--background-ui-bg-elevated);
+}

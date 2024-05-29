@@ -1,0 +1,5 @@
+.table-cell-container {
+  display: flex;
+  text-align: center;
+  margin-right: 14px;
+}

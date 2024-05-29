@@ -1,0 +1,69 @@
+.component-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.component-button:disabled {
+  color: var(--text-ui-text-disabled);
+}
+
+.component-button-small {
+  min-width: 40px;
+  height: 24px;
+}
+.component-button-medium {
+  min-width: 80px;
+  height: 32px;
+}
+.component-button-large {
+  min-width: 100px;
+  height: 40px;
+}
+
+.component-button-contained {
+  background-color: var(--interation-ui-interation-primary);
+  color: var(--text-ui-text);
+}
+.component-button-contained:disabled {
+  background-color: var(--border-ui-border);
+}
+.component-button-contained:enabled:hover {
+  background-color: var(--interation-ui-interation-primary-contrast);
+}
+
+.component-button-outlined {
+  background-color: transparent;
+  color: var(--interation-ui-interation-primary);
+  border: 1px solid var(--interation-ui-interation-primary);
+}
+.component-button-outlined:disabled {
+  border: 1px solid var(--border-ui-border);
+}
+.component-button-outlined:enabled:hover {
+  color: var(--interation-ui-interation-primary-contrast);
+  border: 1px solid var(--interation-ui-interation-primary-contrast);
+}
+
+.component-button-text {
+  min-width: none;
+
+  align-items: start;
+
+  background-color: transparent;
+  color: var(--interation-ui-interation-primary);
+}
+.component-button-text:disabled {
+  background-color: transparent;
+}
+.component-button-text:enabled:hover {
+  background-color: var(--etc-ui-action-hoverfff5);
+  border-radius: 100px;
+}

@@ -1,0 +1,195 @@
+.table-total-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  user-select: none;
+}
+.table-header-container {
+  display: flex;
+  width: 100%;
+  min-height: 36px;
+  max-height: 36px;
+  border-top: 1px solid var(--border-ui-border-elevated);
+  border-bottom: 1px solid var(--border-ui-border-elevated);
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.08);
+  flex-direction: row;
+  align-items: center;
+}
+.table-inner-header-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px;
+  justify-content: space-between;
+}
+.table-header-name-container {
+  display: flex;
+  padding-right: 20px;
+  flex-direction: row;
+  user-select: none;
+}
+
+.sort-icon {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 4px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* ** Body Style */
+.table-body-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  margin-bottom: 32px;
+  /* padding-bottom: 80px; */
+}
+.table-body-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.table-empty-body {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-ui-border-elevated);
+}
+.table-inner-body-container {
+  display: flex;
+  padding-left: 12px;
+  /* cursor: pointer; */
+  flex-direction: row;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-content: space-between;
+  background-color: rgba(238, 238, 238, 0);
+  border-bottom: 1px solid var(--border-ui-border-elevated);
+  align-items: center;
+}
+.table-inner-body-container.no-hover {
+  pointer-events: none; /* hover 이벤트 무효화 */
+}
+
+.table-inner-body-container.dimmed {
+  opacity: 0.3;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.6);
+}
+.table-inner-each-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.table-cell-render-body-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ** Cell Style */
+.table-cell-container {
+  display: flex;
+  text-align: center;
+}
+.table-cell-labels-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  white-space: pre-wrap;
+  gap: var(--gap-5xs);
+}
+.table-cell-show-button {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 2px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid #538bff;
+  color: #538bff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.table-more-icon-container {
+  display: 'flex';
+  flex-direction: 'row';
+}
+.timestamp-container {
+  display: 'flex';
+  flex-direction: 'column';
+}
+.timestamp-more-icon {
+  display: flex;
+  width: '16px';
+  height: '16px';
+  align-self: 'center';
+  padding-right: 12px;
+  cursor: pointer;
+}
+.table-context-menu-wrapper {
+  position: absolute;
+  min-width: 100px;
+  background: rgba(255, 255, 255, 0.005);
+  box-shadow: 5px 5px 10px rgba(20, 25, 35, 0.01);
+  backdrop-filter: blur(25px);
+  flex-direction: column;
+  border-radius: 8px;
+  margin-left: 986px;
+  margin-top: 124px;
+  z-index: 10;
+  overflow-y: scroll;
+}
+.table-context-menu-inner {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.table-context-usingpod {
+  z-index: 10;
+}
+/* ** hover & event */
+.table-context-menu-inner:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+/* .table-inner-body-container:hover {
+  background-color: var(--status-button-hover);
+  cursor: pointer;
+} */
+.table-body-tappable {
+}
+.table-body-tappable:hover {
+  background-color: var(--status-button-hover);
+  cursor: pointer;
+}
+.table-cell-show-button:hover {
+  background-color: var(--status-button-hover);
+}
+/* ** image */
+.profile-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
